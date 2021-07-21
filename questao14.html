@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+</head>
+
+<body>
+    <script>
+        alert("Resolução 1 para idade em anos, 2 para Meses, 3 para Dias, 4 para Semanas")
+        var console = parseInt(prompt("Tipo de Resolução"))
+        var anoNascimento = parseInt(prompt("Ano de nascimento"))
+        var anoAtual = parseInt(prompt("Ano atual"))
+        var idadeAnos = anoAtual - anoNascimento
+        var idadeMeses = idadeAnos * 12
+        var idadeDias = idadeAnos * 365
+        var idadeSemanas = idadeAnos * 52
+
+        if (console == 1) {
+
+            alert("Letra A: " + idadeAnos + " Anos")
+        }
+
+        if (console == 2) {
+
+            alert("Letra B: " + idadeMeses + " Meses")
+        }
+
+        if (console == 3) {
+
+            alert("Letra C: " + idadeDias + " Dias")
+        }
+        
+        if (console == 4) {
+
+            alert("Letra D: " + idadeSemanas + " Semanas")
+        }
+    </script>
+</body>
+
+</html>

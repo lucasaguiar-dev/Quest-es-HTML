@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triângulo</title>
+</head>
+
+<body>
+    <script>
+        // a fórmula da hipotenusa consiste em somar o quadrado dos catetos e depois pegar a raiz desse número
+        // resultado 1 é a soma do quadrado dos catetos, resultado 2 é a raiz do resultado 1
+        var catetoAdjacente = parseInt(prompt("Valor do Cateto Adjacente"))
+        var catetoOposto = parseInt(prompt("Valor do Cateto Oposto"))
+        var resultado1 = Math.pow(catetoAdjacente, 2) + Math.pow(catetoOposto, 2)
+        var resultado2 = Math.sqrt(resultado1)
+        alert("Hipotenusa = " + resultado2)
+    </script>
+</body>
+
+</html>

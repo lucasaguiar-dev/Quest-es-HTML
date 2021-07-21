@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário</title>
+</head>
+
+<body>
+    <script>
+        var horasTrabalhadas = parseInt(prompt("Horas Trabalhadas"))
+        var salarioMinimo = parseInt(prompt("Salário Mínimo"))
+        var horasExtras = parseInt(prompt("Horas EXTRAS Trabalhadas"))
+        var salarioTotal = (0.125 * horasTrabalhadas * salarioMinimo) + (0.250 * horasExtras * salarioMinimo)
+        var salarioTotal = salarioTotal.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+        alert("Salário Final: " + salarioTotal)
+    </script>
+</body>
+
+</html>
